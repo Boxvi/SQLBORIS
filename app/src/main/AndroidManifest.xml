@@ -10,6 +10,15 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.SQLBORIS">
         <activity
+                android:name=".ResgistroActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".EditarActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".VerActivity"
+                android:exported="true"/>
+        <activity
                 android:name=".MainActivity"
                 android:exported="true">
             <intent-filter>
@@ -21,3 +30,16 @@
     </application>
 
 </manifest>
+
+
+<!--
+<activity
+                android:name=".ResgistroActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".VerActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".MainActivity"
+                android:exported="true">
+-->

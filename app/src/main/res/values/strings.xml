@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SQLBORIS</string>
+    <string name="hint_nombre">hint_nombre</string>
 </resources>

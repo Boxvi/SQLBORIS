@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".VerActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewCedula"
+                  android:text="CEDULA" tools:ignore="SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtCedula"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewCedula"
+                  android:textSize="18sp" android:minHeight="48dp" tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewApellido"
+                  android:text="APELLIDO" tools:ignore="SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtApellido"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewApellido"
+                  android:textSize="18sp" tools:ignore="SpeakableTextPresentCheck" android:minHeight="48dp"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewNombre"
+                  android:text="NOMBRE" tools:ignore="SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtNombre"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewNombre"
+                  android:textSize="18sp" android:minHeight="48dp" tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewCiudad"
+                  android:text="CIUDAD" tools:ignore="SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtCiudad"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewCiudad"
+                  android:textSize="18sp" tools:ignore="SpeakableTextPresentCheck" android:minHeight="48dp"/>
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewECivil"
+                  android:text="ESTADO CIVIL" tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtECivil"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewECivil"
+                  android:textSize="18sp" tools:ignore="SpeakableTextPresentCheck" android:minHeight="48dp"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/viewSexo"
+                  android:text="SEXO" tools:ignore="SpeakableTextPresentCheck"/>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/txtSexo"
+                  android:ems="10"
+                  android:inputType="text"
+                  android:labelFor="@+id/viewSexo"
+                  android:textSize="18sp" android:minHeight="48dp" tools:ignore="SpeakableTextPresentCheck"/>
+
+
+        <Button
+                android:id="@+id/btnGuarda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MODIFICAR PERSONA"
+                android:textSize="18sp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_action_pencil"
+                android:clickable="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_action_trash"
+                android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
