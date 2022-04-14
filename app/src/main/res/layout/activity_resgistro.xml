@@ -4,11 +4,11 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              tools:context=".ResgistroActivity">
+              android:padding="15dp"
+              tools:context=".ResgistroActivity" android:onClick="RegresarLista">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
             android:orientation="vertical">
 
         <TextView android:layout_width="match_parent"
@@ -87,13 +87,21 @@
 
         <Button
                 android:id="@+id/btnGuarda"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="CREAR PERSONA"
-                android:textSize="18sp" />
-        
+                android:textSize="18sp"/>
 
+        <Button
+                android:id="@+id/btnRegresar"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Regresar Lista"
+                android:textSize="18sp" android:onClick="RegresarLista"/>
 
 
     </LinearLayout>

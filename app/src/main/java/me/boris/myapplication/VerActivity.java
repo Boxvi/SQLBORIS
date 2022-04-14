@@ -16,7 +16,7 @@ import me.boris.myapplication.modelo.Persona;
 public class VerActivity extends AppCompatActivity {
 
     EditText txtCedula, txtApellido, txtNombre, txtCiudad, txtECivil, txtSexo;
-    Button btnGuarda;
+    Button btnGuarda, btnRegresar;
     FloatingActionButton fabEditar, fabEliminar;
 
     Persona persona;
@@ -39,6 +39,8 @@ public class VerActivity extends AppCompatActivity {
         fabEditar = findViewById(R.id.fabEditar);
         fabEliminar = findViewById(R.id.fabEliminar);
         btnGuarda = findViewById(R.id.btnGuarda);
+        btnRegresar = findViewById(R.id.btnRegresar);
+        btnRegresar.setVisibility(View.INVISIBLE);
         btnGuarda.setVisibility(View.INVISIBLE);
 
         if (savedInstanceState == null) {
@@ -105,5 +107,11 @@ public class VerActivity extends AppCompatActivity {
     private void lista() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+    public void RegresarLista(View view) {
+        Intent regresarLista = new Intent(this, MainActivity.class);
+        startActivity(regresarLista);
+        finish();
     }
 }

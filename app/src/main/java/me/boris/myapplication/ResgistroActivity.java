@@ -1,5 +1,6 @@
 package me.boris.myapplication;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,5 +55,11 @@ public class ResgistroActivity extends AppCompatActivity {
         txtCiudad.setText("");
         txtECivil.setText("");
         txtSexo.setText("");
+    }
+
+    public void RegresarLista(View view){
+        Intent regresarLista = new Intent(this, MainActivity.class);
+        startActivity(regresarLista);
+        finish();
     }
 }

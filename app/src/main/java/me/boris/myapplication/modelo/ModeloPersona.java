@@ -3,6 +3,7 @@ package me.boris.myapplication.modelo;
 import android.content.Context;
 import android.database.Cursor;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class ModeloPersona extends Persona {
@@ -26,6 +27,8 @@ public class ModeloPersona extends Persona {
     public ArrayList<Persona> listarPersonas(Context context) {
         DBHelper dbHelper = new DBHelper(context);
         String sql = "select * from personas";
+
+        System.out.println(" "+sql);
 
         Cursor cursor = dbHelper.query(sql);
 

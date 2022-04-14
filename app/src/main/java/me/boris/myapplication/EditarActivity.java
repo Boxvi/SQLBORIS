@@ -114,4 +114,10 @@ public class EditarActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void RegresarLista(View view){
+        Intent regresarLista = new Intent(this, MainActivity.class);
+        startActivity(regresarLista);
+        finish();
+    }
+
 }
